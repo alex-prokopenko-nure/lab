@@ -56,14 +56,15 @@ namespace DESAPI.Services
             return result;
         }
 
-        private bool OddOrEvenBits(ulong b)
+        private bool CountBits(ulong b)
         {
             uint count = 0;
-            for (; b != 0; b >>= 1)
+            while (b != 0)
             {
-                count += (uint)b & 1;
+                count ^= (uint)b & 1;
+                b /= 2;
             }
-            return (count & 1) != 0;
+            return (count % 2) != 0;
         }
 
         private void GenerateKeys(ulong key)
@@ -72,7 +73,7 @@ namespace DESAPI.Services
             for (int pos = 0; pos < 7; ++pos)
             {
                 ulong firstBits = (key >> (7 * pos)) & ((1u << 7) - 1);
-                if (!OddOrEvenBits(firstBits))
+                if (!CountBits(firstBits))
                 {
                     firstBits += 1 << 7;
                 }
@@ -99,15 +100,12 @@ namespace DESAPI.Services
         private uint FeistelIteration(uint right, ulong key)
         {
             ulong extended = Swap(right, Tables.extensionTable);
-            ulong blocks = extended ^ key;
             uint temp = 0;
             for (int i = 0; i < 8; ++i)
             {
-                uint sosaliti = GetEncryption((uint)((blocks >> (i * 6)) & ((1u << 6) - 1)), i);
-                temp += sosaliti << (i * 4);
+                temp += GetEncryption((uint)(((extended ^ key) >> (i * 6)) & ((1u << 6) - 1)), i) << (i * 4);
             }
-            uint raklo = (uint)Swap(temp, Tables.roundSwapTable);
-            return raklo;
+            return (uint)Swap(temp, Tables.roundSwapTable);
         }
 
         private ulong BlockEncrypt(ulong block)
