@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\DESAPI\DESAPI\bin\Debug\netcoreapp2.1\DESAPI.deps.json
+C:\Users\admin\source\repos\DESAPI\DESAPI\bin\Debug\netcoreapp2.1\DESAPI.runtimeconfig.json
+C:\Users\admin\source\repos\DESAPI\DESAPI\bin\Debug\netcoreapp2.1\DESAPI.runtimeconfig.dev.json
+C:\Users\admin\source\repos\DESAPI\DESAPI\bin\Debug\netcoreapp2.1\DESAPI.dll
+C:\Users\admin\source\repos\DESAPI\DESAPI\bin\Debug\netcoreapp2.1\DESAPI.pdb
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.csprojAssemblyReference.cache
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.RazorAssemblyInfo.cache
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.RazorAssemblyInfo.cs
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.AssemblyInfo.cs
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.RazorTargetAssemblyInfo.cache
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.dll
+C:\Users\admin\source\repos\DESAPI\DESAPI\obj\Debug\netcoreapp2.1\DESAPI.pdb
