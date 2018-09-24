@@ -1,0 +1,17 @@
+<div class="batya">
+  <h2>DES algorithm demo</h2>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Your text" [(ngModel)]="text">
+  </mat-form-field>
+  <br />
+  <mat-form-field>
+    <input matInput type="text" placeholder="Encryption key" [(ngModel)]="key">
+  </mat-form-field>
+  <br />
+  <button mat-raised-button color="primary" (click)="encrypt()">Encrypt</button>
+  <button mat-raised-button color="warn" (click)="decrypt()">Decrypt</button>
+  <div *ngIf="result">
+    <h3>{{result}}</h3>
+  </div>
+</div>
+
